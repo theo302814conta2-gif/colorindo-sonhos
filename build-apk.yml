@@ -6,6 +6,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  
+  - name: Ensure OpenCV AAR
+  run: ls app/libs/opencv-4.7.0.aar || echo "Coloque o opencv-4.7.0.aar em app/libs/"
+
 
 jobs:
   build:
